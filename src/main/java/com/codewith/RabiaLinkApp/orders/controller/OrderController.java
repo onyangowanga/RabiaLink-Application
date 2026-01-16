@@ -6,6 +6,7 @@ import com.codewith.RabiaLinkApp.orders.service.OrderService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class OrderController {
      * Create a new order with order items
      */
     @PostMapping
+    @Secured({"ROLE_ADMIN", "ROLE_MANAGER", "ROLE_STAFF"})
     public ResponseEntity<OrderResponse> createOrder(
             @Valid @RequestBody OrderRequest request
     ) {
@@ -35,6 +37,7 @@ public class OrderController {
      * Get a single order by ID
      */
     @GetMapping("/{id}")
+    @Secured({"ROLE_ADMIN", "ROLE_MANAGER", "ROLE_STAFF", "ROLE_PARTNER"})
     public ResponseEntity<OrderResponse> getOrderById(
             @PathVariable Long id
     ) {
@@ -46,6 +49,7 @@ public class OrderController {
      * Get all orders
      */
     @GetMapping
+    @Secured({"ROLE_ADMIN", "ROLE_MANAGER", "ROLE_STAFF", "ROLE_PARTNER"})
     public ResponseEntity<List<OrderResponse>> getAllOrders() {
         List<OrderResponse> responses = orderService.getAllOrders();
         return ResponseEntity.ok(responses);
