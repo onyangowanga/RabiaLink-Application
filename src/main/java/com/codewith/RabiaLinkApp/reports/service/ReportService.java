@@ -15,7 +15,6 @@ import com.codewith.RabiaLinkApp.partners.repository.PartnerRepository;
 import com.codewith.RabiaLinkApp.partners.repository.PartnerTransactionRepository;
 import com.codewith.RabiaLinkApp.reports.dto.*;
 import com.codewith.RabiaLinkApp.clients.domain.Client;
-import com.codewith.RabiaLinkApp.clients.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
@@ -42,9 +41,6 @@ public class ReportService {
 
     @Autowired
     private PartnerTransactionRepository partnerTransactionRepository;
-
-    @Autowired
-    private ClientRepository clientRepository;
 
     // ================== OPERATIONAL REPORTS ==================
 

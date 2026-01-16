@@ -2,8 +2,6 @@ package com.codewith.RabiaLinkApp.partners.dto;
 
 import com.codewith.RabiaLinkApp.partners.domain.PartnerStatus;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import java.math.BigDecimal;
 
 public class PartnerRequest {
 
