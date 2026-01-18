@@ -9,6 +9,3 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: false
-  h2:
-    console:
-      enabled: true

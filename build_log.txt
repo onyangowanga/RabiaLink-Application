@@ -1,0 +1,18 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.codewith:RabiaLinkApp >----------------------
+[INFO] Building RabiaLinkApp 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ RabiaLinkApp ---
+[INFO] Deleting c:\Programing\Realtime projects\Rabiya Supply Management System\RabiaLinkApp\RabiaLinkApp\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ RabiaLinkApp ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ RabiaLinkApp ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 91 source files with javac [debug parameters release 17] to target\classes
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? 
